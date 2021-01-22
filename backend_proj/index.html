@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="ISO-8859-1">
+		<title>Registrieren</title>
+		<link rel="stylesheet" href="libraries/bootstrap-5.0.0/css/bootstrap.min.css"/>
+	</head>
+	<body>
+		<div class="container">
+			<h1>Registrieren</h1>
+			<hr/>
+			<form action="src/signup.php" method="post" class="col-md-8 col-lg-5 col-xl-4">
+				<label for="firstname">Vorname</label>
+				<input id="firstname" class="form-control" name="firstname" type="text" value="" required>
+				
+				<label for="lastname">Nachname</label>
+				<input id="lastname" class="form-control" name="lastname" type="text" value="" required>
+				
+				<label for="age">Alter</label>
+				<input id="age" class="form-control" name="age" type="number" min="0" max="150" value="" required>
+				
+				<label for="email">E-Mail</label>
+				<input id="email" class="form-control" name="email" type="email" value="" required>
+				
+				<label for="password">Passwort</label>
+				<input id="password" class="form-control" name="password" type="password" required>
+				
+				<div class="checkbox">
+					<label><input type="checkbox" name="newsletter_signup">Newsletter erhalten?</label>				
+				</div>
+				
+				<button type="submit" name="submit-signup" class="btn btn-success">Registrieren</button>
+			</form>
+		</div>		
+	</body>
+</html>
